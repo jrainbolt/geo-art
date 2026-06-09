@@ -34,14 +34,19 @@ npm run preview
 
 This project is configured for the repository path `/geo-art/` with `base: '/geo-art/'` in `vite.config.ts`.
 
-1. Install dependencies with `npm install`.
-2. Make sure the `homepage` field in `package.json` matches your GitHub Pages URL.
-3. Run:
+### GitHub Actions
+
+The included workflow at `.github/workflows/deploy.yml` builds the app and publishes `dist/` to GitHub Pages whenever you push to `main`.
+
+1. Push the repo to GitHub.
+2. In GitHub, open **Settings > Pages**.
+3. Set **Build and deployment > Source** to **GitHub Actions**.
+4. Push to `main`, or run the workflow manually from the **Actions** tab.
+
+### Manual gh-pages Deploy
+
+You can also publish with the `gh-pages` package:
 
 ```bash
 npm run deploy
 ```
-
-The deploy script builds the app and publishes `dist/` using `gh-pages`.
-
-If you prefer GitHub Actions, build with `npm run build` and publish the `dist` folder as a Pages artifact.
