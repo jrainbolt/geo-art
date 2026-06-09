@@ -2,6 +2,7 @@
 
 A Vite React + TypeScript generative art app using the HTML Canvas API. It renders full-screen ambient geometric animations with local controls, presets, PNG export, cursor interaction, and localStorage settings persistence.
 
+
 ## Install
 
 ```bash
